@@ -1,0 +1,18 @@
+* Lern Prolog Now! - solutions
+
+** General
+   This repository contains all my solution proposals for the book Learn Prolog Now!.
+
+   Initially I didn't think of publishing this code and because I am not very consistent with choosing a language for comments, a lot of the comments are written in german. I also didn't have the time to change this. Sorry for that!
+   
+   Another thing, that a lot of my friends don't like too much, is that I tend to enumerate the directories (or folders resp.) in my projects. I do this because it (in my opinion) simplifies the navigation in a project with a terminal (or shell resp.).
+
+   All of my code in this repository is published under the MIT license - in short this means: NO WARRANTY OF ANY KIND but you are allowed to copy, modify, merge, publish, distribute, sublicense and so on the hole project and, even more importantly, it's also permitted to print it out, to frame it and to hang it up over your bed.
+
+** Exercises
+   Before publishing the code I compared every own solution with the solution(s) from the book. As far as the solutions matched mutatis mutandis I only wrote down my one version. If they differed or if there could be found more than one correct solution, I decided to add them in a comment at the end of the corresponding file.
+
+** Practical Sessions
+   It seems that for the practical sessions there don't exist any official solutions. Even though all of my proposed code should "work" it won't be always the best solution for solving the task. So if you find a better one, please feel free to contact me.
+
+   *HAPPY CODING!*

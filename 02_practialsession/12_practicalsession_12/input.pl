@@ -1,0 +1,1 @@
+[a, big, fat, woman, flies, over, the, small, frightened, cow].
