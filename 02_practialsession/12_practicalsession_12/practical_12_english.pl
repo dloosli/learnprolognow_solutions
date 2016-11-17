@@ -33,8 +33,8 @@
 :- module(basicEnglishParser, [s/2, sparse/3, sparseAndDisplay/2, sparseAndWriteToFile/3, readFromPlAndCheck/2, readFromTextAndCheck/2]).
 
 /** module import */
-:- use_module(parseTreePrinter).
-:- use_module(parseTreeReader).
+:- use_module(practical_12_printer).
+:- use_module(practical_12_reader).
 
 
 /** sentence only, no parse tree */
