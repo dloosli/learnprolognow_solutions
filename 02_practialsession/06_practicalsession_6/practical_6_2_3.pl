@@ -1,40 +1,40 @@
 /** Practical Session 6.2.3 - Lösungsvorschlag
  *
- *  Anmerkung: Variante zwei mit Accumulator
+ *  Anmerkung: erste Variante mit Accumulator und
+ *  Variante zwei mit append (keine echte Alternative,
+ *  da gem. Buch ohne append gewünscht)
  *
  */
 
-flatten([], []).
+flatten(List, Flat):-
+    accFlatten(List, [], Flat).
 
-flatten([[] | Tail], Flat):-
-    flatten(Tail, Flat).
+accFlatten([Head | Tail], Acc, Flat) :-
+    accFlatten(Tail, Acc, NewAcc),
+    accFlatten(Head, NewAcc, Flat).
 
-flatten([Head | Tail], [Head | Flat]):-
-    Head \= [_ | _],
-    Head \= [],
-    flatten(Tail, Flat).
+accFlatten(X, AccList, [X|AccList]) :-
+    X \= [],
+    X \= [_|_].
 
-flatten([[HeadX | TailX] | Tail], Flat):-
-    flatten(Tail, SecondFlat),
-    flatten([HeadX | TailX], FirstFlat),
-    append(FirstFlat, SecondFlat, Flat).
+accFlatten([],L,L).
 
-/** Variante 2 (Accumulator)
+
+/** Variante 2 (append)
  *
- *  flatten(List, Flat):-
- *      accFlatten(List, [], Flat).
+ *  flatten([], []).
  *
- *  accFlatten([Head | Tail], Acc, Flat) :-
- *      accFlatten(Tail, Acc, NewAcc),
- *      accFlatten(Head, NewAcc, Flat).
+ *  flatten([[] | Tail], Flat):-
+ *      flatten(Tail, Flat).
  *
- *  accFlatten(X, AccList, [X|AccList]) :-
- *      X \= [],
- *      X \= [_|_].
+ *  flatten([Head | Tail], [Head | Flat]):-
+ *      Head \= [_ | _],
+ *      Head \= [],
+ *      flatten(Tail, Flat).
  *
- *  accFlatten([],L,L).
+ *  flatten([[HeadX | TailX] | Tail], Flat):-
+ *      flatten(Tail, SecondFlat),
+ *      flatten([HeadX | TailX], FirstFlat),
+ *      append(FirstFlat, SecondFlat, Flat).
  *
  */
-
-
-
