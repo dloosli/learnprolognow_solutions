@@ -1,4 +1,4 @@
-* Lern Prolog Now! - solutions
+* Learn Prolog Now! - solutions
 
 ** General
    This repository contains all my solution proposals for the book Learn Prolog Now!.
@@ -13,6 +13,6 @@
    Before publishing the code I compared every own solution with the solution(s) from the book. As far as the solutions matched mutatis mutandis I only wrote down my one version. If they differed or if there could be found more than one correct solution, I decided to add them in a comment at the end of the corresponding file.
 
 ** Practical Sessions
-   It seems that for the practical sessions there don't exist any official solutions. Even though all of my proposed code should "work" it won't be always the best solution for solving the task. So if you find a better one, please feel free to contact me.
+   It seems that there are no official solutions for the practical sessions available. Even though all of my proposed code should "work" it won't be always the best solution for solving the task. So if you find a better one, please feel free to contact me.
 
    *HAPPY CODING!*
